@@ -4,6 +4,8 @@ import Content from "./components/Content";
 import { HashRouter, Route, Routes } from "react-router-dom";
 import Dashboard from "./pages/Dashboard";
 import DetailSurat from "./pages/DetailSurat";
+import Tafsir from './pages/Tafsir';
+import About from './pages/About';
 
 function App() {
   return (
@@ -19,6 +21,8 @@ function App() {
               <Routes>
                 <Route path="/" element={<Dashboard />}></Route>
                 <Route path="/surat/:id" element={<DetailSurat />}></Route>
+                <Route path="/about" element={<About />}></Route>
+                <Route path="/tafsir/:nomor" element={<Tafsir />}></Route>
               </Routes>
             </Content>
           </div>
