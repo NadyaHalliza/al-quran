@@ -1,5 +1,10 @@
 import React, {useState} from "react";
 
+{/* Audio Player */}
+<audio controls>
+<source src={surat.audioFull} type="audio/mpeg" />
+</audio>
+
 const AudioPlayer = ({ url, currentAudio, setCurrentAudio }) => {
   const [isPlaying, setIsPlaying] = useState(false);
 
